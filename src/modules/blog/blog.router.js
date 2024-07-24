@@ -1,7 +1,6 @@
 import { Router } from "express";
 import blogModel from "../../../DB/model/blog.model.js";
 import userModel from "../../../DB/model/user.model.js";
-import { json } from "sequelize";
 const app = Router({caseSensitive:true});
 
 app.post('/',async(req,res)=>{
