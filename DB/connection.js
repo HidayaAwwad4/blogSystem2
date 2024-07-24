@@ -7,7 +7,7 @@ dialect:'mysql'
 
 export const connectDb = async()=>{
     try{
-        return await sequelize.sync({alter:false});
+        return await sequelize.sync({alter:true});
     }catch(error){
         console.log("error to connect db",error);
     }
